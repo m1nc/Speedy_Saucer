@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c18aso17shf86"]
+
+[ext_resource type="Texture2D" uid="uid://k7aipr51diy5" path="res://Speedy_Saucer/purple.png" id="1_1x468"]
+[ext_resource type="PackedScene" uid="uid://ds02ys8r82b36" path="res://Speedy_Saucer/player.tscn" id="2_08db1"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_1x468")
+stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_08db1")]
+position = Vector2(333, 48)
+
+[node name="Player2" parent="." instance=ExtResource("2_08db1")]
+position = Vector2(588, 47)
